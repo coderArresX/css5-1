@@ -10,21 +10,45 @@
     src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
-.main-container {
+a {
+    text-decoration: none;
+}
+
+.menuLink:hover {
+    color: #B968DE;
+}
+
+.menuLink {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+body {
     background-color: #07081A;
+}
+
+.main-container {
     display: flex;
     flex-direction: column;
     gap: 88px;
 }
 
+.container {
+    max-width: 1040px;
+    width: 100%;
+}
+
 header {
-    padding: 14px 200px;
+    display: flex;
+    padding: 14px 0;
     border-bottom: 1px solid #261C51;
+    justify-content: center;
 }
 
 .header {
     display: flex;
-    flex-basis: 1040px;
     justify-content: space-between;
 }
 
@@ -44,15 +68,11 @@ header {
 
 .menu {
     display: flex;
-    /* justify-content: space-between; */
-    flex-basis: 274px;
     align-items: center;
     gap: 16px;
 }
 
-span {
-    color: #B968DE;
-}
+
 
 #user-div {
     width: 32px;
@@ -109,16 +129,16 @@ button {
     line-height: 24px;
     text-align: center;
     border: none;
-} 
+    outline: none;
+}
 
 .decoration {
     display: flex;
-    gap: 90px;
-    padding: 0 72px;
+    justify-content: space-around;
     padding-bottom: 24px;
 }
 
-.decoration > div {
+.decoration>div {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -139,7 +159,6 @@ button {
 
 .card {
     flex-basis: 304px;
-    height: 204px;
     padding: 16px 24px;
     border-radius: 8px;
     border: 1px solid #261C51;
@@ -161,14 +180,19 @@ h2 {
 }
 
 footer {
-    padding: 20px 200px;
     border-top: 1px solid #261C51;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
 .social-icons {
     display: flex;
     gap: 24px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }
